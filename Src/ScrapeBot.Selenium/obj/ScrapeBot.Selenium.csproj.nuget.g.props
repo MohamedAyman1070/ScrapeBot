@@ -13,4 +13,7 @@
     <SourceRoot Include="C:\Users\20106\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver\4.49.0\buildTransitive\Selenium.WebDriver.props" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver\4.49.0\buildTransitive\Selenium.WebDriver.props')" />
+  </ImportGroup>
 </Project>

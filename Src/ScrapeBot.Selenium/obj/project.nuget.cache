@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/i2A6cjcCQs=",
+  "dgSpecHash": "4gPRRuC+b+c=",
   "success": true,
   "projectFilePath": "D:\\C#\\Selenium\\ScrapeBot\\Src\\ScrapeBot.Selenium\\ScrapeBot.Selenium.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\20106\\.nuget\\packages\\selenium.support\\4.49.0\\selenium.support.4.49.0.nupkg.sha512",
+    "C:\\Users\\20106\\.nuget\\packages\\selenium.webdriver\\4.49.0\\selenium.webdriver.4.49.0.nupkg.sha512"
+  ],
   "logs": []
 }
