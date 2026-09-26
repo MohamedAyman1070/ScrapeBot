@@ -15,7 +15,7 @@ namespace ScrapeBot.Selenium.BrowserProvider.Providers
         public override void LaunchBrowser()
         {
             ConfigureOptions(options, (opts,arg)=> opts.AddArgument(arg));
-            driver = new EdgeDriver();
+            driver = new EdgeDriver(options);
         }
 
     }

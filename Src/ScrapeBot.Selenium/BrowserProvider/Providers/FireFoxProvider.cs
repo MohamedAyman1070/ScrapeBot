@@ -11,7 +11,7 @@ namespace ScrapeBot.Selenium.BrowserProvider.Providers
         public override void LaunchBrowser()
         {
             ConfigureOptions(opts , (opts, arg)=> opts.AddArgument(arg));
-            driver = new FirefoxDriver();
+            driver = new FirefoxDriver(opts);
         }
 
     }
