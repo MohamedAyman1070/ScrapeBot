@@ -51,6 +51,16 @@
             "rid": "win"
           }
         }
+      },
+      "ScrapeBot.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ScrapeBot.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScrapeBot.Core.dll": {}
+        }
       }
     }
   },
@@ -95,10 +105,16 @@
         "selenium.webdriver.4.49.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
+    },
+    "ScrapeBot.Core/1.0.0": {
+      "type": "project",
+      "path": "../ScrapeBot.Core/ScrapeBot.Core.csproj",
+      "msbuildProject": "../ScrapeBot.Core/ScrapeBot.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "ScrapeBot.Core >= 1.0.0",
       "Selenium.Support >= 4.49.0",
       "Selenium.WebDriver >= 4.49.0"
     ]
@@ -135,7 +151,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\C#\\Selenium\\ScrapeBot\\Src\\ScrapeBot.Core\\ScrapeBot.Core.csproj": {
+              "projectPath": "D:\\C#\\Selenium\\ScrapeBot\\Src\\ScrapeBot.Core\\ScrapeBot.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
