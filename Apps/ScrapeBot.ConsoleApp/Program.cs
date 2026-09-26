@@ -8,15 +8,15 @@ ChromeProvider chromeProvider = new ChromeProvider();
 chromeProvider.WithIncognito();
 
 EdgeProvider edgeProvider = new EdgeProvider();
-edgeProvider.WithHeadless();
+edgeProvider.WithIncognito();
 
 FireFoxProvider fireFoxProvider = new FireFoxProvider();
-fireFoxProvider.WithHeadless();
+fireFoxProvider.WithIncognito();
 
 
-SeleniumBrowserDriver seleniumBrowser = new SeleniumBrowserDriver(fireFoxProvider);
+SeleniumBrowserDriver seleniumBrowser = new SeleniumBrowserDriver(chromeProvider);
 
-string URL = "http://amazon.eg";
+string URL = "";
 Bot bot = new Bot(seleniumBrowser);
 
 bot.Start();
