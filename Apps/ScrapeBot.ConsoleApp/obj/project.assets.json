@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "ScrapeBot.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ScrapeBot.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScrapeBot.Core.dll": {}
+        }
+      },
+      "ScrapeBot.Selenium/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ScrapeBot.Selenium.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScrapeBot.Selenium.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ScrapeBot.Core/1.0.0": {
+      "type": "project",
+      "path": "../../Src/ScrapeBot.Core/ScrapeBot.Core.csproj",
+      "msbuildProject": "../../Src/ScrapeBot.Core/ScrapeBot.Core.csproj"
+    },
+    "ScrapeBot.Selenium/1.0.0": {
+      "type": "project",
+      "path": "../../Src/ScrapeBot.Selenium/ScrapeBot.Selenium.csproj",
+      "msbuildProject": "../../Src/ScrapeBot.Selenium/ScrapeBot.Selenium.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "ScrapeBot.Core >= 1.0.0",
+      "ScrapeBot.Selenium >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\20106\\.nuget\\packages\\": {},
@@ -39,7 +74,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\C#\\Selenium\\ScrapeBot\\Src\\ScrapeBot.Core\\ScrapeBot.Core.csproj": {
+              "projectPath": "D:\\C#\\Selenium\\ScrapeBot\\Src\\ScrapeBot.Core\\ScrapeBot.Core.csproj"
+            },
+            "D:\\C#\\Selenium\\ScrapeBot\\Src\\ScrapeBot.Selenium\\ScrapeBot.Selenium.csproj": {
+              "projectPath": "D:\\C#\\Selenium\\ScrapeBot\\Src\\ScrapeBot.Selenium\\ScrapeBot.Selenium.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
