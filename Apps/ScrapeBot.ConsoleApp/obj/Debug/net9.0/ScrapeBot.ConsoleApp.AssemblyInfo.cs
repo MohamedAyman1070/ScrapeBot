@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScrapeBot.ConsoleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d3cd0f8676828ac19d2be034904a553a51542cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af84fb24540a9fc2da41e6aa01917a9eff387304")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScrapeBot.ConsoleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScrapeBot.ConsoleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
