@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScrapeBot.Selenium")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6afd3ca2d7ac7d00be57f71e7f707f434d8f86d3")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+623aa0c61adc628c4e0ab7c96a30793988a0bfd9")]
+>>>>>>> master
 [assembly: System.Reflection.AssemblyProductAttribute("ScrapeBot.Selenium")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScrapeBot.Selenium")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
