@@ -13,12 +13,23 @@ edgeProvider.WithIncognito();
 FireFoxProvider fireFoxProvider = new FireFoxProvider();
 fireFoxProvider.WithIncognito();
 
+BraveProvider braveProvider = new BraveProvider();
+braveProvider.WithIncognito();
 
-SeleniumBrowserDriver seleniumBrowser = new SeleniumBrowserDriver(chromeProvider);
 
-string URL = "";
-Bot bot = new Bot(seleniumBrowser);
+SeleniumBrowserDriver seleniumBrowserBrave = new SeleniumBrowserDriver(braveProvider);
+SeleniumBrowserDriver seleniumBrowserChrome = new SeleniumBrowserDriver(chromeProvider);
+SeleniumBrowserDriver seleniumBrowserEdge = new SeleniumBrowserDriver(edgeProvider);
+SeleniumBrowserDriver seleniumBrowserFirefox = new SeleniumBrowserDriver(fireFoxProvider);
 
-bot.Start();
+string URL1 = "http://google.com";
+string URL2 = "http://youtube.com";
+string URL3 = "http://amazon.eg";
+string URL4 = "http://facebook.com";
 
-bot.Navigate(URL);
+Bot braveBot = new Bot(seleniumBrowserBrave);
+
+
+braveBot.Start();
+
+braveBot.Navigate(URL1);
