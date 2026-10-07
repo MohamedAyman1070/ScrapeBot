@@ -12,10 +12,10 @@ namespace ScrapeBot.Selenium.BrowserProvider.Providers
             options = new EdgeOptions();
         }
 
-        public override void LaunchBrowser()
+        public override IWebDriver CreateDriver()
         {
             ConfigureOptions(options, (opts,arg)=> opts.AddArgument(arg));
-            driver = new EdgeDriver(options);
+            return new EdgeDriver(options);
         }
 
     }
