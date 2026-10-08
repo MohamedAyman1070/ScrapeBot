@@ -26,5 +26,10 @@ namespace ScrapeBot.Selenium
         {
             throw new NotImplementedException();
         }
+
+        public void Type(string text)
+        {
+            _element.SendKeys(text);
+        }
     }
 }
