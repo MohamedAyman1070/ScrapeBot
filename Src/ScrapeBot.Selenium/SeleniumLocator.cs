@@ -5,14 +5,15 @@ namespace ScrapeBot.Selenium
 {
     public class SeleniumLocator : ILocator
     {
-        private readonly IWebDriver _driver;
+        private SeleniumBrowserDriver _browserDriver;
+
         public SeleniumLocator(SeleniumBrowserDriver browserDriver)
         {
-            _driver = browserDriver.GetDriver();
+            _browserDriver = browserDriver;
         }
         public IElement Find(string selector)
         {
-            var element = _driver.FindElement(SelectorParser(selector));
+            var element = _browserDriver.GetDriver().FindElement(SelectorParser(selector));
             return new SeleniumElement(element);
         }
 
