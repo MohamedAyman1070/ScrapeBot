@@ -12,10 +12,10 @@ namespace ScrapeBot.Selenium.BrowserProvider.Providers
             chromeOptions = new ChromeOptions();
         }
 
-        public override void LaunchBrowser()
+        public override IWebDriver CreateDriver()
         {
-            ConfigureOptions(chromeOptions,(chromeOptions,arg)=> chromeOptions.AddArgument(arg));
-            driver = new ChromeDriver(chromeOptions);
+            ConfigureOptions(chromeOptions, (chromeOptions, arg) => chromeOptions.AddArgument(arg));
+            return new ChromeDriver(chromeOptions);
         }
 
     }

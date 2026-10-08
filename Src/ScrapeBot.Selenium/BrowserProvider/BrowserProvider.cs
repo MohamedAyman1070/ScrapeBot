@@ -1,7 +1,5 @@
 using ScrapeBot.Selenium.BrowserProvider.BrowserOptions;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.Extensions;
-using OpenQA.Selenium.Chrome;
 namespace ScrapeBot.Selenium.BrowserProvider
 {
     public abstract class BrowserProviderBase
@@ -44,51 +42,10 @@ namespace ScrapeBot.Selenium.BrowserProvider
             return driver;
         }
 
-        public abstract void LaunchBrowser();
+        public abstract IWebDriver CreateDriver();
 
 
 
-        public void Back()
-        {
-            driver.Navigate().Back();
-        }
-
-        public void CloseBrowser()
-        {
-            driver.Close();
-            driver.Dispose();
-        }
-
-        public void Forward()
-        {
-            driver.Navigate().Forward();
-        }
-
-        public string GetCurrentUrl()
-        {
-            return driver.Url;
-        }
-
-        public string GetWindowTitle()
-        {
-            return driver.Title;
-        }
-
-    
-        public void Navigate(string url)
-        {
-            driver.Navigate().GoToUrl(url);
-        }
-
-        public void Refresh()
-        {
-            driver.Navigate().Refresh();
-        }
-
-        public Screenshot TakeScreenshot()
-        {
-            return driver.TakeScreenshot();
-        }
 
         /*
         template name: ProviderOptionTemp

@@ -1,3 +1,4 @@
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
 namespace ScrapeBot.Selenium.BrowserProvider.Providers
@@ -12,10 +13,10 @@ namespace ScrapeBot.Selenium.BrowserProvider.Providers
             chromeOptions.BinaryLocation = "C:\\Users\\20106\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe";
         }
 
-        public override void LaunchBrowser()
+        public override IWebDriver CreateDriver()
         {
             ConfigureOptions(chromeOptions,(chromeOptions,arg)=> chromeOptions.AddArgument(arg));
-            driver = new ChromeDriver(chromeOptions);
+            return new ChromeDriver(chromeOptions);
         }
     }
 }

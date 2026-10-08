@@ -1,3 +1,4 @@
+using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 
 namespace ScrapeBot.Selenium.BrowserProvider.Providers
@@ -8,10 +9,10 @@ namespace ScrapeBot.Selenium.BrowserProvider.Providers
         public FireFoxProvider(){
             opts = new FirefoxOptions();
         }
-        public override void LaunchBrowser()
+        public override IWebDriver CreateDriver()
         {
             ConfigureOptions(opts , (opts, arg)=> opts.AddArgument(arg));
-            driver = new FirefoxDriver(opts);
+            return new FirefoxDriver(opts);
         }
 
     }
