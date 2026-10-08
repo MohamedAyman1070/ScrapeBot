@@ -11,17 +11,19 @@ namespace ScrapeBot.Selenium
         public SeleniumEngine(BrowserProviderBase browserProvider)
         {
             BrowserDriver = new SeleniumBrowserDriver(browserProvider);
-            Locator = new SeleniumLocator(BrowserDriver);
         }
 
         public IBrowserDriver GetDriver()
         {
-            throw new NotImplementedException();
+            return BrowserDriver;
         }
 
+        /*
+        Lack of implementation
+        */
         public ILocator GetLocator()
         {
-            throw new NotImplementedException();
+            return new SeleniumLocator(BrowserDriver);
         }
     }
 }
