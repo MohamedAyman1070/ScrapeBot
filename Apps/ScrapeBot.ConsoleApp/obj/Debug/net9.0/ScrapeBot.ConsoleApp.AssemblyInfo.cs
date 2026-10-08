@@ -13,11 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScrapeBot.ConsoleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af84fb24540a9fc2da41e6aa01917a9eff387304")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+452b775efd1c082bb494087912ed95de51879bc9")]
->>>>>>> feature/selenium
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e73a85acdcbaa60839ac3c55d32e03b1e122d281")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScrapeBot.ConsoleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScrapeBot.ConsoleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
