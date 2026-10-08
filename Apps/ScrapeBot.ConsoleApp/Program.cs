@@ -29,5 +29,7 @@ Bot bot = new Bot(engine);
 
 bot.Start();
 
-bot.Navigate(URL1);
+bot.Navigate(URL3);
+
+Console.WriteLine(bot.Find("input.nav-input nav-progressive-attribute").GetText());
 
