@@ -70,6 +70,9 @@ public class SeleniumBrowserDriver : IBrowserDriver
     {
         return Driver.TakeScreenshot().AsByteArray;
     }
-
+    public IWebDriver GetDriver()
+    {
+        return Driver;
+    }
    
 }
