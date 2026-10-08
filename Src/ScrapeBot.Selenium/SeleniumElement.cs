@@ -9,12 +9,12 @@ namespace ScrapeBot.Selenium
         public SeleniumElement(IWebElement element) => _element = element;
         public void Click()
         {
-            throw new NotImplementedException();
+            _element.Click();
         }
 
-        public string GetAttribute(string attributeName)
+        public string? GetAttribute(string attributeName)
         {
-            throw new NotImplementedException();
+            return _element.GetAttribute(attributeName);
         }
 
         public string GetText()
