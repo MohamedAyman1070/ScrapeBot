@@ -22,14 +22,26 @@ SeleniumBrowserDriver seleniumBrowserChrome = new SeleniumBrowserDriver(chromePr
 SeleniumBrowserDriver seleniumBrowserEdge = new SeleniumBrowserDriver(edgeProvider);
 SeleniumBrowserDriver seleniumBrowserFirefox = new SeleniumBrowserDriver(fireFoxProvider);
 
+SeleniumEngine engine = new SeleniumEngine(seleniumBrowserBrave);
+
 string URL1 = "http://google.com";
 string URL2 = "http://youtube.com";
 string URL3 = "http://amazon.eg";
 string URL4 = "http://facebook.com";
 
-Bot braveBot = new Bot(seleniumBrowserBrave);
+Bot braveBot = new Bot(engine);
 
 
 braveBot.Start();
 
 braveBot.Navigate(URL1);
+
+internal class SeleniumEngine
+{
+    private SeleniumBrowserDriver seleniumBrowserBrave;
+
+    public SeleniumEngine(SeleniumBrowserDriver seleniumBrowserBrave)
+    {
+        this.seleniumBrowserBrave = seleniumBrowserBrave;
+    }
+}
