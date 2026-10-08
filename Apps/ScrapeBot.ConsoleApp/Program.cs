@@ -30,6 +30,6 @@ Bot bot = new Bot(engine);
 bot.Start();
 
 bot.Navigate(URL3);
-
-Console.WriteLine(bot.Find("input.nav-input nav-progressive-attribute").GetText());
-
+System.Threading.Thread.Sleep(2000);
+bot.Find(".nav-input.nav-progressive-attribute").Type("laptop");
+bot.Find("nav-search-submit-button").Click();
