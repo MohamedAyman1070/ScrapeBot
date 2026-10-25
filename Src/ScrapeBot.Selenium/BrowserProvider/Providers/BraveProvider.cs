@@ -10,7 +10,7 @@ namespace ScrapeBot.Selenium.BrowserProvider.Providers
         public BraveProvider()
         {
             chromeOptions = new ChromeOptions();
-            chromeOptions.BinaryLocation = "C:\\Users\\20106\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe";
+            chromeOptions.BinaryLocation = "";
         }
 
         public override IWebDriver CreateDriver()
