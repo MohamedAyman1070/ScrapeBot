@@ -29,7 +29,14 @@ Bot bot = new Bot(engine);
 
 bot.Start();
 
+// bot.Navigate(URL5);
+// System.Threading.Thread.Sleep(10000);
+// string mail =bot.Find("id=mail").GetAttribute("value");
+// Console.WriteLine("temp mail: " + mail);    
+
+
+
 bot.Navigate(URL3);
 System.Threading.Thread.Sleep(2000);
 bot.Find(".nav-input.nav-progressive-attribute").Type("laptop");
-bot.Find("nav-search-submit-button").Click();
+bot.Find("id=nav-search-submit-button").Click();
